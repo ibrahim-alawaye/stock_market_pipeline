@@ -1,0 +1,23 @@
+API URL
+https://query1.finance.yahoo.com/v8/finance/chart/aapl?matrics=high?&interval=1d&range=1y
+
+docker build . -t airflow/transform-stock
+
+psql -h localhost -p 5432 -U postgres -d postgres
+
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' minio
+
+{
+  "endpoint": "/v8/finance/chart/",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Mozilla/5.0"
+  }
+}
+
+
+{
+  "endpoint_url": "http://minio:9000"
+}
+
+
